@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="form-group">
+  <textarea class="form-control center-block" rows="30" style="width:60%">
+{% for i in asn2_data %}
+{{ i['name'] }} -- AS{{ i['asn'] }}
+=======================================
+Max Prefix IPv4: {{ i['info_prefixes4'] }}
+Max Prefix IPv6: {{ i['info_prefixes6'] }}
+=======================================
+{% endfor %}
+{% for i in ixp_data %}
+IXP: {{ i['name'] }}
+=======================================
+ASN: {{ i['asn'] }}
+IPv4: {{ i['ipaddr4'] }}
+IPv6: {{ i['ipaddr6'] }}
+=======================================
+{% endfor %}
+  </textarea>
+</div>
+{% endblock %}

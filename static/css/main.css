@@ -1,0 +1,22 @@
+html,body {
+  height: 100%;
+  margin-top: 60px;
+}
+
+.navbar-brand {
+    font-size: 32px;
+}
+
+.navbar-fixed-top .nav {
+    padding: px 2px 5px 2px;
+    font-size: 24px;
+    padding-top: 0px;
+}
+
+.form-horizontal {
+    padding: 40px 20px 100px 20px;
+}
+
+.asn_1 label {}
+
+.asn_2 label {}
