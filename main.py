@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, flash
 import requests
 
 app = Flask(__name__)
-app.secret_key = #'REPLACE WITH SECRET KEY'
+app.secret_key = 'REPLACE'
 app.config['SESSION_TYPE'] = 'filesystem'
 
 @app.route('/')
