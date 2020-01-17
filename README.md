@@ -1,6 +1,21 @@
-# Peer My AS - peermyas.net
+# Peer My AS - https://peermyas.net/
 
-Flask based web app to help simplify the peering process. Uses PeeringDB.com API to match the input ASNs and only display the peering information of ASN2 that ASN1 would care about (filtered information).
+Flask based web app to help simplify the peering process. 
 
-This is the source for peermyas.net, feel free to check it out and use as needed http://peermyas.net. 
+Uses PeeringDB.com API to retrieve matching Internet Exchanges for the ASNs provided.
 
+# Docker
+
+Available as a container via docker hub.
+```
+https://hub.docker.com/r/locinetworks/peermyas
+```
+## Pull Docker container
+```
+docker pull locinetworks/peermyas
+```
+
+### Start container
+```
+docker run -d -p 80:5000 locinetworks/peermyas:latest
+```
